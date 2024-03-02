@@ -29,7 +29,7 @@
     padding: 20px;
     align-items: center;
     height: 75px;
-    margin-left: 362px;
+    margin-left: 190px;
     margin-top: -132px;
 }
 .nav_list li{
@@ -120,4 +120,70 @@
 }
 .sub_dropdown_content li{
     margin-left: 29px;
+}
+/* 右ナビゲーション部分 */
+/* 検索 */
+form{
+    margin-left: 822px;
+    margin-top: -77px;
+}
+input {
+    border-radius: 20px;
+    border: solid 1px #cac9c9;
+    width: 391px;
+    height: 39px;
+  }
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button img{
+    padding-bottom: 25px;
+    padding-left: 377px;
+    width: 20px;
+    height: 20px;
+}
+
+:placeholder-shown {
+    padding-left: 15px;
+}
+/* 登録写真バー */
+.right_nav{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    height: 75px;
+    margin-top: -19px;
+}
+.user_image{
+    margin-left: 20px;
+    margin-bottom: -6px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+}
+
+.user_dropdown{
+    margin-top: -62px;
+    margin-right: 184px;
+}
+
+.user_dropdown_content {
+    list-style: none;
+    width: 229px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+    z-index: 1;
+    height: 188px;
+    margin-right: 85px;
+}
+
+
+.user_dropdown:hover .user_dropdown_content {
+    display: block; /* 鼠标悬停时显示下拉菜单 */
 }
