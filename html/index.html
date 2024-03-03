@@ -5,6 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photoBox{
+            width: 2000px;
+            height: 600px;
+            position: relative;
+        }
+        .img{
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +44,7 @@
             <ul class="nav_list">
                 <li class="dropdown"><a href="">ゲーム<img src="images/上矢印.png" alt="" id="arrow"></a>
                 <ul class="dropdown_content">
-                    <li class="sub_dropdown"><img src="images/gameConsole.png" alt="" id="gc"><a href="#">ビデオゲーム<img src="image/上矢印.png" alt="" id="arrow1"></a>
+                    <li class="sub_dropdown"><img src="images/gameConsole.png" alt="" id="gc"><a href="#">ビデオゲーム<img src="images/上矢印.png" alt="" id="arrow1"></a>
                     <ul class="sub_dropdown_content">
                         <li><a href="#">PS4/PS5</a></li>
                         <li><a href="#">Nintendo Switch</a></li>
@@ -37,12 +64,51 @@
                 </form></li>
                 <li class="user_dropdown"><img src="/html/images/user.png" alt="" width="30px" height="30px" class="user_image">
                 <ul class="user_dropdown_content">
-                   <li><a href="">ログイン</a></li>
-                   <li>こちらに
-                     <a href="">新規登録</a>></li>
+                   <li class="login"><a href="">ログイン</a></li>
+                   <li class="sign">こちらに
+                     <a href="">新規登録</a></li>
                 </ul></li>
             </ul>
         </div>
     </header>
+    <main>
+        <div class="box">
+            <div class="photoBox">
+                <div class="img" style="background-image: url(images/神秘海域.png);">
+                <h1>UNCHARTED 4</h1>
+                <span>シリーズ完結編！</span>
+                </div>
+                <div class="img" style="background-image: url(images/Horizon.png);">
+                <h1>Horizon 2 Forbidden West</h1>
+                <span>1000年後の未来、アメリカ西部を舞台に描かれる『Horizon Forbidden West』。</span>
+                </div>
+                <div class="img" style="background-image: url(images/BioHazard.png);">
+                <h1>BioHazard RE:4</h1>
+                <span>エイダ・ウォンを主人公に、『バイオハザード RE:4』本編のミッシングリンクを描いたストーリーコンテンツ。 </span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="table">
+                <div class="boxbtn">
+                    <img src="images/神秘海域.png" alt="">
+                    <h1>UNCHARTED 4</h1>
+                </div>
+                <div class="boxbtn">
+                    <img src="images/Horizon.png" alt="">
+                    <h1>Horizon 2 Forbidden West</h1>
+                </div>
+                <div class="boxbtn">
+                    <img src="images/BioHazard.png" alt="">
+                    <h1>BioHazard RE:4</h1>
+                </div>
+            </div>
+        </div>
+        <div class="game_list">
+            <div class="vg_list">
+
+            </div>
+        </div>
+    </main>
 </body>
 </html>

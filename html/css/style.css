@@ -92,7 +92,7 @@
 
 .dropdown_content li a{
     color: black;
-    width: 132px;  
+    width: 158px;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -100,6 +100,16 @@
 
 #gc{
     margin-left: -20px;
+    margin-bottom: -45px;
+}
+
+.pc_image img{
+    margin-left: -21px;
+    margin-bottom: -45px;
+}
+
+.mobilegame_image img{
+    margin-left: -21px;
     margin-bottom: -45px;
 }
 /* 下下拉导航栏 */
@@ -183,7 +193,33 @@ button img{
     margin-right: 85px;
 }
 
-
 .user_dropdown:hover .user_dropdown_content {
     display: block; /* 鼠标悬停时显示下拉菜单 */
 }
+
+.login{
+    text-align: center;
+    margin-left: 27px;
+    padding-top: 14px;
+    margin-top: 60px;
+    width: 193px;
+    border-radius: 51px;
+    height: 35px;
+    box-shadow: 0 0 10px rgba(245, 134, 134, 0.856);
+    background: linear-gradient(pink, rgb(235, 118, 138), rgb(234, 46, 77));
+}
+.login a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.sign{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.sign a{
+    color: rgb(234, 46, 77);
+}
+
+/* メイン部分 */
+/* カルーセル */
