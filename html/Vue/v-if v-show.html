@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        年齢<input type="text" v-model="age">あなたは
+        <span v-if="age<=35">若い者(35歳以下)</span>
+        <span v-else-if="age>35 && age<60">中年人(35-60)</span>
+        <span v-else>老人(60歳以上)</span>
+        <br><br>
+
+        年齢<input type="text" v-model="age">あなたは
+        <span v-show ="age<=35">若い者(35歳以下)</span>
+        <span v-show="age>35 && age<60">中年人(35-60)</span>
+        <span v-show="age>=60">中年人(35-60)</span>
+    </div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            age:20
+        },
+        methods:{
+
+        }
+    })
+</script>
+</html>
